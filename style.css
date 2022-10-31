@@ -1,0 +1,468 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+:root{
+
+    --primary-color: #E8A121;
+    /* --secondary-color: #12232e; */
+    --secondary-color: #3f3f3f;
+
+}
+
+header nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+
+}
+
+header nav .drop-down{
+
+    margin: 0px -10px;
+    
+    
+
+}
+
+header nav .drop-down img{
+
+
+    width: 30px;
+    height: 30px;
+    margin: -1px 1px;   
+    cursor: pointer;
+
+
+}
+
+
+header nav .drop-down .drop-holder{
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80px;
+ 
+
+}
+
+header nav .drop-down .sevice-tab div{
+
+    display: block;
+   
+
+
+}
+
+
+header nav .drop-down .sevice-tab div a{
+
+
+   color: white;
+
+
+}
+
+
+header nav .drop-down .sevice-tab {
+
+    /* width: 100%; */
+    position: absolute;
+    z-index: 999;
+    background-color: #595858;
+    top: 70px;
+    width: 250px;
+    border-radius: 20px;
+    transition: opacity 2s;
+    
+
+}
+
+
+
+
+header nav .drop-down .sevice-tab div {
+
+    margin: 10px 20px;
+
+    /* margin-bottom: 8px; */
+    padding: 5px 16px;
+    cursor: pointer;
+    border-radius: 40px;
+   
+   
+}
+
+header nav .drop-down .sevice-tab div:hover {
+
+  background-color: var(--primary-color);
+
+ 
+}
+
+
+
+header nav ul{
+
+    
+    display: flex;
+    
+
+}
+
+
+header nav ul div{
+
+        margin: 0em 2em;    
+
+}
+
+header nav ul div a{
+
+        
+     text-decoration: none;
+     font-size: 1.1em;
+
+}
+
+header nav button{
+
+    
+    outline: unset;
+    border: none;
+    border-radius: 50px;
+    width: 140px;
+    padding: 12px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: white
+    
+}
+
+header nav .signup-signin a{
+
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--secondary-color);
+    margin: 0px 5px ;
+    font-weight: 900;
+
+    
+}
+
+/* Section-control */
+
+
+
+.Starter-Sec{
+
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid black; */
+  padding: 30px 80px;
+
+
+  
+  
+
+}
+
+.Starter-Sec .intro-sec{
+
+  /* border: 2px solid black; */
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 800px;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 100px 100px ;
+
+
+}
+
+.Starter-Sec .intro-sec .Web-intro{
+
+  margin-top: 50px;
+
+}
+
+.Starter-Sec .intro-sec .Web-intro h2{
+
+  font-size: 4em;
+  color: var(--primary-color);
+  font-weight: 900;
+  margin-top: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+}
+
+
+
+.Starter-Sec .intro-sec .Web-intro p{
+
+  font-size: 1.4em;
+  margin-top: 20px;
+  letter-spacing: 3px;
+  color: white;
+  
+
+}
+
+.Starter-Sec .intro-sec .Web-intro button{
+
+  margin-top: 40px;
+outline: unset;
+border: none;
+border-radius: 40px;
+width: 240px;
+height: 65px;
+padding: 12px;
+cursor: pointer;
+background: var(--primary-color);
+color: white
+
+}
+
+.Starter-Sec .intro-sec .Web-pics img{
+
+
+  width: 400px;
+  height:400px;
+
+
+}
+
+.Starter-Sec .intro-sec .Web-pics {
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.Starter-Sec .intro-sec .Side-icons img{
+
+  width: 133px;
+  height: 133px;
+  margin: 35px;
+  
+
+
+}
+
+.Starter-Sec .intro-sec .Side-icons{
+
+
+  display: flex;
+  flex-direction: column;
+
+}
+  
+  
+
+/* service section  */
+
+
+.Service-Sec{
+
+
+  width: 100%;
+  height: 100vh;
+  padding: 40px 100px;
+  
+
+
+}
+
+
+.Service-Sec .sec-intro{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+
+}
+
+.Service-Sec .sec-intro h2{
+
+  font-size: 3.2em;
+  letter-spacing: 0.2em;
+
+}
+
+
+.Service-Sec .service-holder{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+
+}
+
+.Service-Sec .service-holder .service{
+
+  width: 280px;
+  height: 280px;
+
+  display: flex;  
+justify-content: center;
+align-items: center;
+border-radius: 50px;
+background-color: var(--secondary-color);
+gap: 10px;
+cursor: pointer;
+
+transition: 0.2s linear;
+
+}
+
+
+.Service-Sec .service-holder .service:hover{
+
+  transform: scale(1.020);
+
+}
+
+
+
+.Service-Sec .service-holder .service img{
+
+
+  width: 120px;
+  height: 120px;
+
+
+}
+/* 
+.Service-Sec .service-holder .service img {
+
+  filter: invert(1);
+  } */
+
+.Service-Sec .service-holder .service h2{
+
+ 
+  margin-top: 10px;
+  font-size: 1.0em;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+  font-weight: 12px;
+  padding: 0px 10px;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+
+
+}
+
+
+
+
+
+
+/* slider */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+ border-radius: 50%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+ 
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+} 
