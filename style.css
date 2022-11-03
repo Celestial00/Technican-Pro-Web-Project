@@ -7,6 +7,12 @@
 
 }
 
+*::selection{
+
+background-color: #00ABB3;
+
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -18,11 +24,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-/* *::selection{
 
-  color: tomato;
-
-} */
 
 :root{
 
@@ -616,6 +618,7 @@ gap: 1.4em;
 
   width: 250px;
   padding: 15px 20px;
+  font-size: 1.2em;
   border-radius: 20px;
   border: none;
   outline: unset;
@@ -625,9 +628,79 @@ gap: 1.4em;
 
 
 
-.complain-form .Form-inputs:placeholder{
+
+.complain-form .Form-inputs input::placeholder{
 
   color: black;
   font-size: 1.2em;
+
+}
+
+.complain-form .Form-inputs textarea::placeholder{
+
+  color: black;
+  font-size: 1.2em;
+
+}
+
+.Footer{
+
+  width: 100%;
+  height: 400px;
+  /* margin: 0; */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:12em;
+
+
+
+}
+
+
+.Footer div h2{
+
+  color: var(--primary-color);
+  font-size: 2.1em;
+  margin-bottom: 15px;
+
+
+}
+
+
+.Footer div ul {
+
+  list-style: none;
+
+
+}
+
+.Footer div ul li {
+
+
+  margin: 10px;
+
+}
+
+
+
+.Footer div a{
+
+  color: white;
+text-decoration: none;
+font-size: 1.1em;
+
+
+
+
+}
+
+.Footer .Available-div{
+
+
 
 }
