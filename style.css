@@ -32,6 +32,7 @@ input[type=number] {
     --secondary-color: #3C4048;
     --text-color: white;
     --shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    --bg-color: : #dddddd;
 
 }
 
@@ -201,6 +202,16 @@ header nav .signup-signin a{
 
     
 }
+
+/* body */
+
+
+body{
+
+  background-color: var(--bg-color);
+
+}
+
 
 /* Section-control */
 
@@ -699,8 +710,55 @@ font-size: 1.1em;
 
 }
 
-.Footer .Available-div{
+.style-elemts{
+
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  position: relative;
+  left: 150px;
 
 
+
+
+}
+
+.style-elemtsB{
+
+  
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  position: relative;
+  left: 200px;
+
+}
+
+.style-elemtstag2{
+
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  position: relative;
+  left: 1450px;
+
+
+
+
+}
+
+.style-elemtsBtag2{
+
+  
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  position: relative;
+  left: 1500px;
+  
 
 }

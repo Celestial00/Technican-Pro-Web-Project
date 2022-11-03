@@ -1,0 +1,253 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+*::selection{
+
+background-color: #00ABB3;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+:root{
+
+    --primary-color: #00ABB3;
+    --secondary-color: #3C4048;
+    --text-color: white;
+    --shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    --bg-color: : #dddddd;
+
+}
+
+
+header nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+
+}
+
+header nav .drop-down{
+
+    margin: 0px -10px;
+    
+    
+
+}
+
+header nav .drop-down img{
+
+
+    width: 30px;
+    height: 30px;
+    margin: -1px 1px;   
+    cursor: pointer;
+
+
+}
+
+
+header nav .drop-down .drop-holder{
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80px;
+ 
+
+}
+
+header nav .drop-down .sevice-tab div{
+
+    display: block;
+   
+
+
+}
+
+
+header nav .drop-down .sevice-tab div a{
+
+
+   color: white;
+  
+
+
+}
+
+header nav .drop-down .sevice-tab div a:hover{
+
+  color: white;
+
+}
+
+
+
+
+header nav .drop-down .sevice-tab {
+
+    /* width: 100%; */
+    position: absolute;
+    z-index: 999;
+    background-color: #595858;
+    top: 70px;
+    width: 250px;
+    border-radius: 20px;
+    transition: opacity 2s;
+    
+
+}
+
+
+
+
+header nav .drop-down .sevice-tab div {
+
+    margin: 10px 20px;
+
+    /* margin-bottom: 8px; */
+    padding: 5px 16px;
+    cursor: pointer;
+    border-radius: 40px;
+   
+   
+}
+
+header nav .drop-down .sevice-tab div:hover {
+
+  background-color: var(--primary-color);
+
+
+ 
+}
+
+
+
+header nav ul{
+
+    
+    display: flex;
+    
+
+}
+
+
+header nav ul div{
+
+        margin: 0em 2em;    
+
+}
+
+header nav ul div a{
+
+        
+     text-decoration: none;
+     font-size: 1.1em;
+     font-weight: 400;
+     color: var(--secondary-color);
+
+}
+
+
+header nav ul div a:hover{
+
+        
+  color: var(--primary-color);
+  
+
+}
+
+
+header nav button{
+
+    
+    outline: unset;
+    font-size: 16px;
+    font-weight: 900;
+    border: none;
+    border-radius: 50px;
+    width: 140px;
+    padding: 12px;
+    cursor: pointer;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    
+}
+
+header nav .signup-signin a{
+
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--secondary-color);
+    margin: 0px 5px ;
+    font-weight: 900;
+
+}
+
+.img-sec{
+
+
+    width: 100%;
+    height: 550px;
+    background-image: url("../img/models/carpenter.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: -50px;
+    background-position-y: -600px;
+
+
+
+}
+
+/* .img-sec img{
+
+    object-fit: cover;
+
+} */
+
+
+.about-us{
+
+    padding: 80px 400px;
+
+
+}
+
+
+.about-us h2{
+
+    margin: 30px 0px;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+
+}
+
+.about-us p{
+
+
+    font-size: 1.060em;
+    line-height: 1.6em;
+    font-weight: 500;
+
+
+
+}
