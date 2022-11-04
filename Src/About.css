@@ -213,6 +213,8 @@ header nav .signup-signin a{
     background-repeat: no-repeat;
     background-position-x: -50px;
     background-position-y: -600px;
+    position: relative;
+    z-index: -1;
 
 
 
