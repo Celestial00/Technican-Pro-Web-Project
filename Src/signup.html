@@ -29,14 +29,14 @@
 
         <div class="input-1">
 
-            <input type="text" placeholder="Name">
-            <input type="number" placeholder=" Phone Number">
+            <input type="text" placeholder="Name" id="Name">
+            <input type="number" placeholder=" Phone Number" id="Number">
 
         </div>
 
         <div class="input-2">
 
-            <input type="email" placeholder="E-mail">
+            <input type="email" placeholder="E-mail" id="email">
          
         </div>
 
@@ -52,14 +52,67 @@
 
 
         </div>
-
+   
         <div class="Button">
             
-            <button>Sign Up</button>
+            <button id="SubBtn" onclick="GetSelected()">Sign Up</button>
 
         </div>
 
     </div>
+
+    <script type="module">
+       
+
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+        // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+      
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyD6Ba6xGs5E5NOo9q301iEDScXExnE61FI",
+          authDomain: "tech-web-dce89.firebaseapp.com",
+          databaseURL: "https://tech-web-dce89-default-rtdb.firebaseio.com",
+          projectId: "tech-web-dce89",
+          storageBucket: "tech-web-dce89.appspot.com",
+          messagingSenderId: "56477286765",
+          appId: "1:56477286765:web:051d81e570b8825d129a64",
+          measurementId: "G-C5CPRC8Q7L"
+        };
+    
+        const app = initializeApp(firebaseConfig);
+        // const analytics = getAnalytics(app);
+
+        import {set, ref, getDatabase} from  "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";
+        const databse = getDatabase();
+
+
+       const SubBtn = document.getElementById("SubBtn");
+       const Name = document.getElementById("Name")
+       const email = document.getElementById("email")
+       const phone = document.getElementById("Number")
+       const select = document.getElementById("cars")
+
+
+       SubBtn.onclick = () =>{
+
+            set(ref(databse,"Users/" + phone.value),{
+
+                Name : Name.value,
+                Email : email.value,
+                Region : select.value
+
+            }).then(() =>{
+
+                alert(" Sign up Complete!")
+                window.location.href="../Index.html"
+                
+
+            })
+          
+        }
+
+      </script>
 
     
 </body>

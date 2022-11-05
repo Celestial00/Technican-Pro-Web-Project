@@ -35,3 +35,74 @@ input[type=number] {
     --bg-color: : #dddddd;
 
 }
+
+body{
+
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sign-in .icon img{
+
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px ;
+
+}
+
+.sign-in{
+
+
+
+  width: 600px;
+  height: 500px;
+  border: 2px solid black;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  border: none;
+
+
+
+
+}
+
+.sign-in .inputs{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.sign-in input{
+
+  outline: unset;
+  padding: 10px;
+  width: 380px;
+  margin: 10px 0px;
+  border-radius: 50px;
+  border: none;
+  
+
+}
+
+.sign-in .btn button{
+
+
+  margin-top: 20px;
+  width: 300px;
+  height: 35px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+
+}

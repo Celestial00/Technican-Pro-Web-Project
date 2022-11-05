@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
@@ -15,5 +15,110 @@
 </head>
 <body>
     
+    
+
+    <div class="sign-in">
+
+        <div class="icon">
+
+            <img src="../img/icons/user.png" alt="" srcset="">
+
+        </div>
+
+        <div class="inputs">
+
+            <input type="number" placeholder="Phone Number" id="PhoneNumber">
+            
+
+
+        </div>
+
+        <div class="btn">
+
+            <button id="Login">Login</button>
+
+        </div>
+
+    </div>
+
+    <script type="module">
+       
+
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+        // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+      
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyD6Ba6xGs5E5NOo9q301iEDScXExnE61FI",
+          authDomain: "tech-web-dce89.firebaseapp.com",
+          databaseURL: "https://tech-web-dce89-default-rtdb.firebaseio.com",
+          projectId: "tech-web-dce89",
+          storageBucket: "tech-web-dce89.appspot.com",
+          messagingSenderId: "56477286765",
+          appId: "1:56477286765:web:051d81e570b8825d129a64",
+          measurementId: "G-C5CPRC8Q7L"
+        };
+    
+        const app = initializeApp(firebaseConfig);
+        // const analytics = getAnalytics(app);
+
+        const db = getDatabase();
+
+        import {set, ref, get, child, getDatabase} from  "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";
+        const databse = getDatabase();
+
+        const PhoneNumber = document.getElementById("PhoneNumber");
+        const LoginBtn = document.getElementById("Login");
+        var Name;
+        var Email;
+        var Region;
+        
+
+        LoginBtn.onclick = () =>{
+
+            const dbhref = ref(db); 
+
+            get(child(dbhref,"Users/" + PhoneNumber.value)).then((snapshot) =>{
+
+                if(snapshot.exists()){
+
+
+                    Name = snapshot.val().Name;
+                    Email = snapshot.val().Email;
+                    Region = snapshot.val().Region;
+
+                    localStorage.setItem("Name", Name)
+                    localStorage.setItem("Email", Email)
+                    localStorage.setItem("Region", Region)
+    
+                    window.location.href = "../Src/ProfilePg.html";
+
+                }
+                else{
+
+                    alert("no data found")
+                }
+
+            }).catch((e) =>{
+
+                console.log(e)
+
+            }
+        )
+
+   
+
+        }
+        
+
+    
+
+
+
+
+
+        </script>
+
 </body>
 </html>

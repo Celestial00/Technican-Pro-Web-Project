@@ -1,0 +1,126 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+*::selection{
+
+background-color: #00ABB3;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+:root{
+
+    --primary-color: #00ABB3;
+    --secondary-color: #3C4048;
+    --text-color: white;
+    --shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    --bg-color: : #dddddd;
+
+}
+
+body{
+
+    padding: 100px 100px;
+
+}
+
+section{
+
+    padding: 50px 50px;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+
+
+}
+
+
+.UserInfo img{
+
+
+    width: 100px;
+    height: 100px;
+    
+
+}
+
+.UserInfo{
+
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 3em;
+   
+
+}
+
+.UserInfo .User-name{
+
+    margin-top: 0px;
+
+}
+
+
+.UserInfo .User-name h2{
+
+    font-size: 3em;
+    color: black;
+    
+}
+
+
+.UserInfo .User-name p{
+
+    
+    letter-spacing: 0.1em;
+    color: black;
+    font-size: 1em
+   
+    
+
+    
+}
+
+.breakLine{
+
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    bottom: 55px;
+
+}
+
+.serivices-enrolled{
+
+width: 100%;
+min-height: 400px;
+max-height: 100vh;
+display: flex;
+flex-direction: column;
+
+}
+
+.serivices-enrolled h2{
+
+
+    font-size: 3em;
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+
+    <link rel="stylesheet" href="Profilepg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+
+   <section>
+
+    <div class="UserInfo">
+
+        <div class="Icon">
+
+            <img src="../img/icons/user.png" alt="">
+
+        </div>
+
+        <div class="User-name">
+
+            <h2 id="Name">Name</h2>
+            <p id="Email">email</p>
+            <p id="Region">region</p>
+
+        </div>
+
+ 
+</div>
+
+<div class="breakLine"></div>
+
+<div class="serivices-enrolled">
+
+    <div class="intro">
+
+        <h2>Services serivices-enrolled</h2>
+
+    </div>
+
+    <div class="Services">
+
+
+    </div>
+
+        
+
+</div>
+
+   </section>
+
+
+   <script>
+
+    var Name = document.getElementById("Name");
+    var Email = document.getElementById("Email");
+    var region = document.getElementById("Region");
+
+    Name.innerHTML = localStorage.getItem("Name")
+    Email.innerHTML = localStorage.getItem("Email")
+    Region.innerHTML = localStorage.getItem("Region")
+     
+         
+
+   </script>
+
+
+
+    
+</body>
+</html>
