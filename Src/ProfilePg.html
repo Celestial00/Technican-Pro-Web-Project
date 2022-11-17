@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
-    
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,72 +11,181 @@
 
 
     <link rel="stylesheet" href="Profilepg.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
 
 
-   <section>
+    <header>
 
-    <div class="UserInfo">
+        <div class="UserInfo">
 
-        <div class="Icon">
+            <div class="Profile-info">
 
-            <img src="../img/icons/user.png" alt="">
+
+                <div class="Icon">
+
+                    <img src="../img/icons/user.png" alt="">
+
+                </div>
+
+                <div class="User-name">
+
+                    <h2 id="Name">Name</h2>
+                    <p id="Email">email</p>
+                    <p id="Region">region</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="Addbutton">
+
+                <h2 onclick="openpop()">+</h2>
+
+            </div>
+
 
         </div>
 
-        <div class="User-name">
+    </header>
 
-            <h2 id="Name">Name</h2>
-            <p id="Email">email</p>
-            <p id="Region">region</p>
+
+    <section>
+
+        <div class="Pop-form" id="popup">
+
+            <div class="inputs">
+
+
+
+                <select id="service">
+
+                    <h2>Service </h2>
+
+                    <option value="Technician">Technician</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="Mechanic">Mechanic</option>
+
+                </select>
+
+
+                <select id="region">
+
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Jamshoro">Jamshoro</option>
+                    <option value="Karachi">Karachi</option>
+
+                </select>
+                <input type="date" placeholder="date" id="date">
+
+                <button onclick="closepop()">Add Service</button>
+
+            </div>
 
         </div>
 
- 
-</div>
-
-<div class="breakLine"></div>
-
-<div class="serivices-enrolled">
-
-    <div class="intro">
-
-        <h2>Services serivices-enrolled</h2>
-
-    </div>
-
-    <div class="Services">
+        <div class="service-sec" id="service-sec">
 
 
-    </div>
 
-        
-
-</div>
-
-   </section>
+        </div>
 
 
-   <script>
+    </section>
 
-    var Name = document.getElementById("Name");
-    var Email = document.getElementById("Email");
-    var region = document.getElementById("Region");
 
-    Name.innerHTML = localStorage.getItem("Name")
-    Email.innerHTML = localStorage.getItem("Email")
-    Region.innerHTML = localStorage.getItem("Region")
-     
-         
+    <script>
 
-   </script>
+        var Name = document.getElementById("Name");
+        var Email = document.getElementById("Email");
+        var region = document.getElementById("Region");
 
+
+
+        Name.innerHTML = localStorage.getItem("Name")
+        Email.innerHTML = localStorage.getItem("Email")
+        Region.innerHTML = localStorage.getItem("Region")
+
+
+        //Task creation elements
+
+
+
+
+        var pop = document.getElementById("popup")
+
+        var region = document.getElementById("region");
+        var service = document.getElementById("service");
+        var date = document.getElementById("date");
+    
+
+
+
+
+        function openpop() {
+
+
+            pop.classList.add("open-Pop-form")
+
+
+
+        }
+
+        function closepop() {
+
+            pop.classList.remove("open-Pop-form")
+            AddService()
+
+
+
+        }
+
+
+
+
+        function AddService() {
+
+            var listDiv = document.getElementById("service-sec")
+            var Taskdiv = document.createElement("div");
+            var TaskName = document.createElement("h2");
+            var TaskDate = document.createElement("span");
+            var closebtn = document.createElement('a')
+
+
+            Taskdiv.classList = "container";
+
+            TaskName.textContent = service.value;
+            TaskDate.textContent = date.value;
+            closebtn.textContent = "X"
+
+            Taskdiv.appendChild(TaskName)
+            Taskdiv.appendChild(TaskDate)
+            Taskdiv.appendChild(closebtn)
+
+            listDiv.appendChild(Taskdiv)
+
+
+            closebtn.onclick = () =>{
+
+                
+
+            }
+
+        }
 
 
     
+
+    </script>
+
+
+
+
 </body>
+
 </html>
